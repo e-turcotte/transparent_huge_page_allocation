@@ -1,0 +1,16 @@
+# 1) Clone linux kernel
+# 2) create folder called image
+# 3) copy launch_qemu script to root of linux
+# 4) copy create_image script to image folder
+
+
+5) build linux kernel
+6) cd image && ./create_image
+7) cd ..
+8) ./launch_qemu
+9) I dunno
+
+If you want to move benchmarks to the image either build in qemu, or copy them to the image before it’s created (bottom of the ./create_image script there is an example of moving some mcf spec files into the image).
+
+Any changes to the kernel will require redoing this process from step 5 excluding step 9.
+
