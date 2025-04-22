@@ -4,7 +4,10 @@
 # 4) copy create_image script to image folder
 
 
-5) build linux kernel
+5) build linux kernel - all in linux-kernel directory
+  - Run make config, take all the default configs (hold enter)
+  - Put empty string in CONFIG_SYSTEM_TRUSTED_KEYS and CONFIG_SYSTEM_REVOCATION_KEYS
+  - Run make
 6) cd image && ./create_image
 7) cd ..
 8) ./launch_qemu
